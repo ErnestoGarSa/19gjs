@@ -45,7 +45,7 @@ let grados= Number(prompt("Por favor dame los grados celsius", 0))
 
 console.log(typeof grados)
 
-if (grados !== null ){
+if (grados === Number ){
     fahrenheit= grados * 9/5 + 32
     console.log(`${grados} grados Celsius equivalen a ${fahrenheit} grados Fahrenheit`)
 } else {
