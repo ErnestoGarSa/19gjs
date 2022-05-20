@@ -6,9 +6,9 @@ if (grados === null ){
     fahrenheit= Number(grados) * 9/5 + 32
 }
 
-let clima = prompt("Como esta el clima en tu ciudad: a - Soleado, b - Lluvioso, c - Nevado, d - Nublado")
+let clima = prompt("Como esta el clima en tu ciudad:\n a - Soleado\n b - Lluvioso\n c - Nevado\n d - Nublado")
 
-switch (clima){
+switch (clima.toLowerCase()){
     case "a":
         window.alert(`El clima actual en tu ciudad es Soleado con una temperatura ${fahrenheit} grados Fahrenheit`)
         break
