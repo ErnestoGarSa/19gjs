@@ -17,9 +17,14 @@
 
 let number=Number(prompt("Por favor ingresa un número entre 1 y 10: "))
 
-for (let i=1; i<=10; i++){
-    console.log(`${number} x ${i} = ${number*i}`)
+if (number >= 1 && number <=10){
+    for (let i=1; i<=10; i++){
+        console.log(`${number} x ${i} = ${number*i}`)
+    } 
+} else {
+    console.log("Número invalido")
 }
+
 
 /**
  * Ejercicio 3
@@ -60,11 +65,16 @@ console.log(`Las consonantes en la oración son ${consonants}`)
 
 let variable=Number(prompt("Por favor dame un número entre 10 y 100"))
 
-for (let i=1; i<=variable; i++){
-    if (i % 2 == 0){
-        console.log(i)
+if (variable >= 10 && variable <= 100){
+    for (let i = 1; i <= variable; i++){
+        if (i % 2 == 0){
+            console.log(i)
+        } 
     }
+} else {
+    console.log("Número invalido")
 }
+
 
 /**
  * 
