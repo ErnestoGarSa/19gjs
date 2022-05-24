@@ -9,6 +9,10 @@ let total=0
 for (let i=1 ; i<= 100; i++){
     if(i%3 == 0){
         total+=i
+    }else if (i % 5 == 0){
+        total+= i
+    } else if (i % 7 == 0 ){
+        total+=i
     }
 }console.log(total)
 
@@ -44,8 +48,8 @@ console.log(total3)
  */
 
 //FOR
-let num= Number(prompt("Por favor ingresa un número entre 1 - 100"))
-// let num=5
+//let num= Number(prompt("Por favor ingresa un número entre 1 - 100"))
+let num=20
 let total4=0
 if (num >= 1 && num <= 100){
     for (num ; num >= 1 ; num--)
