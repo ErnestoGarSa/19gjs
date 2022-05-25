@@ -42,7 +42,7 @@ let num1= prompt("Por favor ingresa el primer valor: ")
 let num2= prompt("Por favor ingresa el segundo valor: ")
 let num3= prompt("Por favor ingresa el tercer valor: ")
 
-let callAdd= userAdd(num1, num2, num3)
+let callAdd= userAdd(num1, num2, num3=3)
 console.log(callAdd)
 
 
@@ -100,12 +100,12 @@ function addNumber(N=3){
         let total= 0
         for (let i= 1 ; i <= N; i++){
             total += i
-        } window.alert(total)
+        } window.alert(` El total de la suma entre 1 y ${N} es ${total}`)
     } else{
         window.alert("Ingresaste un valor invalido")
     }
 }
 
-let numb=Number(prompt("Por favor ingresa un número: "))
+let numb=Number(prompt("Por favor ingresa un número entre 1 y 100: "))
 let cadenaSumas=addNumber(numb)
 console.log(cadenaSumas)
