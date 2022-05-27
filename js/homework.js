@@ -21,6 +21,8 @@ console.log(reverseStr('hola mundo'))
 console.log(reverseStr('Parangaricutirimicuaro'))
 console.log(reverseStr("Ernesto"))
 
+const reverseStr2 = (str2) => str2.split("").reverse().join("")
+
 /**
  * Funcion que reciba un array de numeros
  * y devuelva el promedio de todos los elementos
