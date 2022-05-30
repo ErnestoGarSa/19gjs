@@ -45,14 +45,32 @@ const iniciales = (arr) => {
 console.log(iniciales(nombres))
 
 
-const getDoubleNumbers= (arr) => {
-    let doubleNumbersArr = []
+// const getDoubleNumbers= (arr) => {
+//     let doubleNumbersArr = []
 
-    doubleNumbersArr=arr.reduce( (acc, cv) => {
-        acc.push(cv * 2)
+//     doubleNumbersArr=arr.reduce( (acc, cv) => {
+//         acc.push(cv * 2)
+//         return acc
+//     },[])
+//     return doubleNumbersArr
+// }
+
+// console.log(getDoubleNumbers([2,4,8]))
+
+
+const getDoubleNumbers = (arr) => {
+
+    // let doubleNUmbersArr = []
+    // doubleNUmbersArr = arr.reduce( (acc, elemento, index) => {
+    //     acc.push(elemento * 2)
+    //     return acc
+    // }, [] )
+    // return doubleNUmbersArr
+
+    return arr.reduce( (acc, elemento) => {
+        acc.push(elemento * 2)
         return acc
-    },[])
-    return doubleNumbersArr
+    }, [] )
 }
 
-console.log(getDoubleNumbers([2,4,8]))
+console.log(getDoubleNumbers( [4, 7, 9]))
