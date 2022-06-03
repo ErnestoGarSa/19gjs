@@ -37,7 +37,6 @@ console.log(valores)
 
 let obj1={
     name: "Ernesto",
-    lastName: "García"
 }
 
 let obj2={
@@ -47,7 +46,7 @@ let obj2={
 Object.assign(obj1, obj2)
 
 console.log(obj1)
-console.log(obj1)
+console.log(obj2)
 
 //Metodo entries
 //Hace un array de arrays donde cada array esta conformado en pares de [key , value]

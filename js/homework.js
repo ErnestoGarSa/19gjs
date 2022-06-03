@@ -33,14 +33,12 @@
 ]
 
 const arrObj = (arrO) => {
-    let names= ""
     arrO.forEach((cv) => {
-        names += cv.name+" "
-    },"")
-    return names
+        console.log(`${cv.name} ${cv.lastName} tiene ${cv.age} y es de la generación ${cv.generation}`)
+    })
 }
 
-console.log(arrObj(koders))
+arrObj(koders)
 /**
  * Del mismo array de koders
  * Obtener la suma de todas las edades
