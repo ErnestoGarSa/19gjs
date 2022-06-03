@@ -8,22 +8,22 @@
 //     Replicar con JS este markup
 //  */
 
-// let lista= document.createElement("ul")
-// let body = document.querySelector("body")
+let lista= document.createElement("ul")
+let body = document.querySelector("body")
 
-// lista.setAttribute("id", "menu")
-// lista.setAttribute("class", "menu")
+lista.setAttribute("id", "menu")
+lista.setAttribute("class", "menu")
 
-// let values= ["Home", "Products", "About Us"]
+let values= ["Home", "Products", "About Us"]
 
-// for (let i=0; i<values.length; i ++ ){
-//     let item = document.createElement("li")
-//     item.setAttribute("class", "item__menu")
-//     item.textContent = values[i]
-//     lista.appendChild(item)
-// }
+for (let i=0; i<values.length; i ++ ){
+    let item = document.createElement("li")
+    item.setAttribute("class", "item__menu")
+    item.textContent = values[i]
+    lista.appendChild(item)
+}
 
-// body.appendChild(lista)
+body.appendChild(lista)
 
 // /**
 //  * Dado un arreglo de koders
@@ -56,17 +56,17 @@
     }
 ]
 
-// let lista2= document.createElement("ul")
-// let listaSub= document.createElement("ul")
+let lista2= document.createElement("ul")
+let listaSub= document.createElement("ul")
 
-// koders.forEach((cv) => {
-//     let item = document.createElement("li")
-//     item.setAttribute("class", "item_koder")
-//     item.textContent = `${cv.name} ${cv.lastName}`
-//     lista2.appendChild(item)
-// })
+koders.forEach((cv) => {
+    let item = document.createElement("li")
+    item.setAttribute("class", "item_koder")
+    item.textContent = `${cv.name} ${cv.lastName}`
+    lista2.appendChild(item)
+})
 
-// body.appendChild(lista2)
+body.appendChild(lista2)
 
 /**
  * Opcional
