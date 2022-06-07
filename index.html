@@ -7,8 +7,37 @@
     <title>Document</title>
 </head>
 <body>
-   <h1>Hola JS</h1> 
+   <h1>DOM Events</h1> 
 
-<script src="/js/base.js"></script>
+   <!-- mouse -->
+   <button onclick="clickBoton()">Click Me</button>
+   <button onclick="enviar()">Enviar</button>
+   <button onclick="calculando()">Calcular</button>
+
+   <!-- teclado -->
+   <input type="text" onkeyup="escribiendo()">
+
+   <input type="email" onkeypress="empezando()" onkeydown="presionado()" onkeyup="terminando()">
+   <input type="text" onpaste="pegar()">
+
+
+   <button onclick="tarea1()">Ejercicio 1</button>
+   <button onclick="tarea2()">Ejercicio 2</button>
+   <button onclick="tarea3()">Ejercicio 3</button>
+
+<!-- <table>
+    <thead>
+        <th>nombre</th>
+        <th>edad</th>
+        <th>generación</th>
+    </thead>
+    <tbody>
+
+    </tbody>
+</table> -->
+
+
+<script src="/js/homework.js"></script>
 </body>
 </html>
+
