@@ -179,22 +179,22 @@ console.log(template)
 
 
 
-let templatesFor = ""
-albumes.forEach ( (cv) => {
-    templatesFor += `
-    <div class="col">
-        <div class="card">
-            <img src="${cv.url}">
-            <div class="card-body">
-                <h5 class="card-title">${cv.id}</h5>
-                <p class="card-description">${cv.title}</p>
-            </div>
-        </div>
-    </div>
-    `
-})
-console.log(templatesFor)
-document.querySelector(".cards__albumes").innerHTML = templatesFor
+// let templatesFor = ""
+// albumes.forEach ( (cv) => {
+//     templatesFor += `
+//     <div class="col">
+//         <div class="card">
+//             <img src="${cv.url}">
+//             <div class="card-body">
+//                 <h5 class="card-title">${cv.id}</h5>
+//                 <p class="card-description">${cv.title}</p>
+//             </div>
+//         </div>
+//     </div>
+//     `
+// })
+// console.log(templatesFor)
+// document.querySelector(".cards__albumes").innerHTML = templatesFor
 /**
  * Tarea
  * Estudiar el tema JavaScript HTML DOM EventListener
