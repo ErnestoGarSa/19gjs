@@ -331,10 +331,38 @@ const filterUsers = (strToFilter) => {
       user.username.toLowerCase().includes(strToFilter.toLowerCase()) ||
       user.email.toLowerCase().includes(strToFilter.toLowerCase())
     ) {
-      userID= user.id;
+      userID= user
     }
   });
   return userID
+
 };
 
-console.log(filterUsers("Hoeger"));
+console.log(filterUsers("Patricia"))
+
+let inputSearch = document.querySelector("#filter_user")
+
+inputSearch.addEventListener('keyup', () => {
+  // obtener el valor a buscar
+  let searchValue= inputSearch.value
+  // Filtrar usuarios
+  let usersFiltrados = filterUsers(searchValue)
+  // imprimimos en consola
+  console.log(usersFiltrados)
+  // agregamos al layout en lista_users
+})
+
+const loadSearch = (users) => {
+  let template = users.reduce((acc, user) => {
+    acc += `<ul class="list-group list-group-horizontal">
+    <li class="list-group-item">${user.name}</li>
+    <li class="list-group-item">${user.username}</li>
+    <li class="list-group-item">${user.email}</li>
+  </ul>`
+  return acc
+
+  },"")
+  document.querySelector("#lista__users").innerHTML = template
+}
+
+document.addEventListener("inputSearch", loadSearch)
