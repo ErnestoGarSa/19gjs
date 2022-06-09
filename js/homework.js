@@ -368,7 +368,7 @@ const printUserList = (usersFiltered) => {
 document.addEventListener('DOMContentLoaded',  printUserList(users) )
 
 let inputSearch = document.getElementById('filter__user')
-inputSearch.addEventListener('focus', () => {
+inputSearch.addEventListener('change', () => {
   // obtener el valor a buscar
   let searchTerm = inputSearch.value
   // Filtrar los usuarios
@@ -385,9 +385,3 @@ inputSearch.addEventListener('focus', () => {
 // DOMContentLoaded
 // focus
 // change
-
-
-
-
-
-
