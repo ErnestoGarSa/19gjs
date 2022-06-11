@@ -5,7 +5,7 @@
           box-sizing: border-box;
 }
 
-.container {
+.formulario {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

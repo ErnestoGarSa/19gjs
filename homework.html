@@ -16,11 +16,14 @@
         <main class="main">
             <div class="container bg-dark">
     
-               <input placeholder="Title" type="text" id="title" value="" class="m-3">
-               <textarea placeholder="Please enter your comment" id="body" value="" cols="30" rows="10" class="m-3"></textarea>
-               <input id="date" type="date" class="m-3">
-               <button type="submit" class="btn btn-primary enviar m-3">Enviar</button>
+                <form action="" class="formulario">
 
+                <input required placeholder="Title" type="text" id="title" value="" class="m-3">
+                <textarea required placeholder="Please enter your comment" id="body" value="" cols="30" rows="10" class="m-3"></textarea>
+                <input required id="date" type="date" class="m-3" min="">
+                <button type="submit" class="btn btn-primary enviar m-3">Enviar</button>
+                <button class="btn btn-success ver m-3">Ver lista</button>
+                </form>
                 
 
                <div class="row row-cols-1 row-cols-md-3 comments">
