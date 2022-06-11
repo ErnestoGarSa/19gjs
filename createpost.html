@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <!-- Set de caracteres  -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        <link rel="stylesheet" href="/css/styles.css">
+        
+    </head>
+    <body>
+
+        <main class="main">
+            <div class="container">
+    
+                <h1 class="text-center mt-5 mb-4 ">Crear post</h1>
+
+                <form 
+                    class="shadow form__new__user p-5 rounded"
+                >
+
+                    <div class="alert alert-success d-none" role="alert" id="wrap__alert">
+                        Post creado correctamente con el id <span id="id__post"></span>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="title" class="form-label">Titulo del post</label>
+                        <input required type="text" class="form-control" id="title" placeholder="Titulo de post">
+                    </div>
+                    <div class="mb-3">
+                        <label for="body" class="form-label">Descripcion del post</label>
+                        <textarea required class="form-control" id="body" rows="3"></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <label for="datepost" class="form-label">Fecha del post</label>
+                        <input 
+                            type="date" 
+                            class="form-control" 
+                            id="datepost" 
+                            value="2022-06-10"
+                            min="2022-06-10" 
+                            max="2022-12-31" 
+                            required
+                        >
+                    </div>
+
+
+                    <div class="d-flex justify-content-end">
+                        <button type="button" class="btn btn-primary" id="create__post">Enviar</button>
+                    </div>
+
+                </form>
+                
+            </div>
+        </main>
+
+
+        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+        <script src="/js/ajaxposts.js"></script>
+        <script src="/js/createPost.js"></script>
+        
+    </body>
+</html>
+
+
+
+
