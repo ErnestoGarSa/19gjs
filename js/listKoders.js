@@ -37,8 +37,8 @@ conexion.onload = function(data) {
                               <p class="card-text">${email}</p>
                               <p class="card-text">${phone}</p>
                               <div class="btns d-flex justify-content-between">
-                              <a href="/interior.html?koderkey=${key}" class="btn btn-primary">Ver Mas</a>
-                              <a href="/updateKoder.html?koderkey=${key}" class="btn btn-info" id="updateKod">Actualizar</a>
+                                <a href="/interior.html?koderkey=${key}" class="btn btn-primary">Ver Mas</a>
+                                <a href="/updateKoder.html?koderkey=${key}" class="btn btn-info" id="updateKod">Actualizar</a>
                               </div>
                             </div>
                           </div>
