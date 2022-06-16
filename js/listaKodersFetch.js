@@ -29,6 +29,7 @@ fetch("https://js19g-8ff6a-default-rtdb.firebaseio.com/koders/.json")
                               <p class="card-text">${phone}</p>
                               <div class="btns d-flex justify-content-between">
                               <a href="/viewKoderFetch.html?koderkey=${koder}" class="btn btn-primary">Ver Mas</a>
+                              <a href="/updateKoderFetch.html?koderkey=${koder}" class="btn btn-success">Actualizar</a>
                               </div>
                             </div>
                           </div>

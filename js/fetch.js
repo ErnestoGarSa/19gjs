@@ -51,3 +51,42 @@ fetch("url", {
 .catch((err) => {
     console.log(err)
 })
+
+// PATCH
+
+fetch("url", {
+    method: "PATCH",
+    body: JSON.stringify(newKoder),
+    headers: {
+        "Content-Type": "application/json ; charset=UTF-8"
+}
+})
+.then((response) => {
+    return response.json()
+})
+.then((response) => {
+    console.log(response)
+})
+.catch((err) => {
+    console.log(err)
+})
+
+// DELETE
+
+fetch("URL", {
+    method: "DELETE"
+})
+.then((response) => {
+    if(!response.ok){
+        new Error("Algo Salio mal")
+    }else {
+        // console.log(response)
+        return response.json()
+    }
+})
+.then((finalResponse) => {
+    console.log(finalResponse)
+})
+.catch((err) => {
+    console.log(err)
+})
